@@ -36,7 +36,7 @@ cacheSolve <- function(x, ...) {
     }
     
     data <- x$Get()
-    inv_matrix <- solve(data)
+    inv_matrix <- solve(data, ...)
     x$SetInvMatrix(inv_matrix)
     inv_matrix
 }
